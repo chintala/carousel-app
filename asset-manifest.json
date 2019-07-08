@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/carousel-app/static/css/main.23317fd6.chunk.css",
+    "main.js": "/carousel-app/static/js/main.3a59377b.chunk.js",
+    "main.js.map": "/carousel-app/static/js/main.3a59377b.chunk.js.map",
+    "runtime~main.js": "/carousel-app/static/js/runtime~main.c5c38197.js",
+    "runtime~main.js.map": "/carousel-app/static/js/runtime~main.c5c38197.js.map",
+    "static/js/2.adef1af3.chunk.js": "/carousel-app/static/js/2.adef1af3.chunk.js",
+    "static/js/2.adef1af3.chunk.js.map": "/carousel-app/static/js/2.adef1af3.chunk.js.map",
+    "index.html": "/carousel-app/index.html",
+    "precache-manifest.cb3797ebb08d97f197f4224907a40c38.js": "/carousel-app/precache-manifest.cb3797ebb08d97f197f4224907a40c38.js",
+    "service-worker.js": "/carousel-app/service-worker.js",
+    "static/css/main.23317fd6.chunk.css.map": "/carousel-app/static/css/main.23317fd6.chunk.css.map"
+  }
+}
