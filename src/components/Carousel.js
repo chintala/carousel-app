@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './Image';
 import { PrevButton, NextButton, PlayPauseButton } from './Buttons';
+import PropTypes from 'prop-types';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -84,5 +85,9 @@ class Carousel extends React.Component {
     return <div className="carousel-container">{this.renderSlide()}</div>;
   }
 }
+
+Carousel.propTypes = {
+  images: PropTypes.array
+};
 
 export default Carousel;

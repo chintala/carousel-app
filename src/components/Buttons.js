@@ -1,5 +1,5 @@
 import React from 'react';
-import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 export class PrevButton extends React.Component {
   constructor(props) {
@@ -12,22 +12,22 @@ export class PrevButton extends React.Component {
   }
 
   render() {
-    let prevClasses = { 'carousal-prev': true };
-    let prevArrowProps = {
-      className: classnames(prevClasses),
-      onClick: this.handleClick
-    };
-    if (this.props.currentImage === 0) {
-      prevArrowProps['disabled'] = true;
-    }
     return (
-      <button type="button" {...prevArrowProps}>
-        {' '}
+      <button
+        type="button"
+        onClick={this.handleClick}
+        disabled={this.props.currentImage === 0}
+      >
         Previous
       </button>
     );
   }
 }
+
+PrevButton.propTypes = {
+  onPrevClick: PropTypes.func,
+  currentImage: PropTypes.number
+};
 
 export class NextButton extends React.Component {
   constructor(props) {
@@ -40,22 +40,24 @@ export class NextButton extends React.Component {
   }
 
   render() {
-    let nextClasses = { 'carousal-next': true };
-    let nextArrowProps = {
-      className: classnames(nextClasses),
-      onClick: this.handleClick
-    };
-    if (this.props.currentImage === this.props.images.length - 1) {
-      nextArrowProps['disabled'] = true;
-    }
     return (
-      <button type="button" {...nextArrowProps}>
+      <button
+        type="button"
+        onClick={this.handleClick}
+        disabled={this.props.currentImage === this.props.images.length - 1}
+      >
         {' '}
         Next
       </button>
     );
   }
 }
+
+NextButton.propTypes = {
+  onNextClick: PropTypes.func,
+  images: PropTypes.array,
+  currentImage: PropTypes.number
+};
 
 export class PlayPauseButton extends React.Component {
   constructor(props) {
@@ -68,15 +70,15 @@ export class PlayPauseButton extends React.Component {
   }
 
   render() {
-    let playClasses = { 'carousal-play': true };
-    let playProps = {
-      className: classnames(playClasses),
-      onClick: this.handleClick
-    };
     return (
-      <button type="button" {...playProps}>
+      <button type="button" onClick={this.handleClick}>
         {this.props.playing ? 'Pause' : 'Play'}
       </button>
     );
   }
 }
+
+PlayPauseButton.propTypes = {
+  onPlayPauseClick: PropTypes.func,
+  playing: PropTypes.bool
+};

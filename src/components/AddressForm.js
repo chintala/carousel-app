@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class AddressForm extends React.Component {
   constructor(props) {
@@ -39,5 +40,9 @@ class AddressForm extends React.Component {
     );
   }
 }
+
+AddressForm.propTypes = {
+  updateAddress: PropTypes.func
+};
 
 export default AddressForm;
