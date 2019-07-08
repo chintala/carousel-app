@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders photos 1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <div
+      class="app-wrap"
+    >
+      <div
+        class="app-header"
+      />
+      <div
+        class="app-content"
+      >
+        <form
+          class="location-form"
+        >
+          <input
+            placeholder="Example: Seattle, WA"
+            type="text"
+          />
+          <button
+            type="submit"
+            value="submit"
+          >
+            Get Photos
+          </button>
+        </form>
+        <div
+          class="carousel-container"
+        >
+          <div
+            class="carousel-slide"
+          >
+            <div
+              class="carousel-buttons"
+            >
+              <button
+                type="button"
+              >
+                Previous
+              </button>
+              <button
+                type="button"
+              >
+                Play
+              </button>
+              <button
+                type="button"
+              >
+                 
+                Next
+              </button>
+            </div>
+            <div>
+              <img
+                alt="title2"
+                class="carousel-image"
+                src="https://farmf.staticflickr.com/s/2_sec.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="app-footer"
+      />
+    </div>
+  </div>
+</div>
+`;

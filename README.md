@@ -14,6 +14,7 @@ This project implements a carousel viewer with these patterns/functionality:
 - Uses prop types to assist with catching typing issues for props during development.
 - Has eslint setup to do static analysis and follow good coding practices.
 - Has prettier setup to format code automatically
+- The focus has been on making the app work and not a full fledged carousel library. We can make the individual components (buttons, image) of the carousel more customizable if needed. It makes more sense to add unit testing of these components in that case.
 
 ## Available Scripts
 

@@ -73,4 +73,6 @@ it('renders photos', async () => {
 
   imgElement2 = await waitForElement(() => getByAltText('title2'));
   expect(imgElement2.src).toBe('https://farmf.staticflickr.com/s/2_sec.jpg');
+
+  expect(container).toMatchSnapshot();
 });
