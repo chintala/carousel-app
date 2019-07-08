@@ -1,5 +1,20 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Carousel App
+
+This project implements a carousel viewer with these patterns/functionality:
+
+- Deployed to github pages URL: https://chintala.github.io/carousel-app/
+- Uses Google Maps Geocode API to get lat/lon from a given address
+- Uses Flickr API to get pictures associated with a lat/long
+- The components are classified into presentational/container components to have good separation of concerns.
+- Uses redux to manage global state like images so that it is easy to extend the app and manage complex state. The container components connect to the redux state/dispatch.
+- Integration tests are written with react-testing-library to test basic functionality
+- We can easily write more unit tests and snapshot tests but the integration tests verify end users functionality which gives more confidence about the stability of the product
+- Uses prop types to assist with catching typing issues for props during development.
+- Has eslint setup to do static analysis and follow good coding practices.
+- Has prettier setup to format code automatically
+
 ## Available Scripts
 
 In the project directory, you can run:
